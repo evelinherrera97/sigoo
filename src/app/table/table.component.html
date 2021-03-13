@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table table-borderless table-hover bg-white">
+        <thead class="border-bottom">
+            <tr>
+                <th>equipo</th>
+                <th>guias {{total1}}</th>
+                <th>unidades de guias {{total2}}</th>
+                <th>unidades de leidas {{total3}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of product; index as i" (mouseover)="showDetail(i)" (mouseout)="hideDetail()" (click)="detail()">
+                <td>{{item.teams}}</td>
+                <td>{{item.guide}}</td>
+                <td>{{item.guideUnit}}</td>
+                <td>{{item.readGuide}}</td>
+            </tr>
+        </tbody>
+        </table>
+</div>
+

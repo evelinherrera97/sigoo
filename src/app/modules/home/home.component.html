@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="my-5">
+        <h4>
+            Guias asignadas
+        </h4>
+    </div>
+    <div class="row">
+        <div [ngClass]="{'col-12': !show, 'col-8': show}">
+            <app-table [product]="product" [total1]="total1" [total2]="total2" [total3]="total3" (hoverEvent)="showDetail($event)" (hideEvent)="hideDetails()" (goTodetail)="goDetail()"></app-table>
+        </div>
+        <app-cards class="col-4" [data]="product[index]" *ngIf="show"></app-cards>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+.title {
+    color: #086BB5;
+}
+
+.icon{
+    color: gray;
+}
+
+.navbar {
+    height: 64px;
+}
+
+.img {
+    width: 90px;
+}
+
+p {
+    margin: 0;
+}

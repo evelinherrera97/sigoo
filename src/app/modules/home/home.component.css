@@ -1,0 +1,7 @@
+.animate {
+}
+
+.col-12, .col-7 {
+    transition: all .1s ease-in;
+
+}
